@@ -1,0 +1,81 @@
+
+  
+ 
+
+  .authPage {
+   
+    height: 100vh;
+    background-color: #1e3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .leftPanel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      color: #fff;
+  
+      h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #9bbf9c;
+      }
+  
+      h2 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #9bbf9c;
+      }
+  
+      p {
+        margin: 1rem 0;
+      }
+  
+      a {
+        color: #9bbf9c;
+      }
+    }
+  
+    .rightPanel {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .formContainer {
+    background-color: #2f4f4f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  
+    .signupForm {
+      .ant-form-item-label > label {
+        color: #fff;
+      }
+  
+      .ant-input, .ant-input-password {
+        background-color: #3e5e5e;
+        color: #fff;
+        border: none;
+      }
+  
+      .ant-input::placeholder, .ant-input-password::placeholder {
+        color: #a0a0a0;
+      }
+  
+      .ant-btn-primary {
+        width: 100%;
+        background-color: #4caf50;
+        border-color: #4caf50;
+      }
+    }
+  }
+  
+  
