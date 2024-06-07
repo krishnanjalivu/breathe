@@ -3,13 +3,14 @@ import { Tabs } from "antd";
 import SignUpForm from "../components/SignUpForm";
 import SignInForm from "../components/LoginForm";
 import styles from "../styles/AuthPage.module.scss";
-
+import image from "../assets/image.png";
+import image2 from "../assets/image2.png";
 const AuthPage: React.FC = () => {
   return (
     <div className={styles.authPage}>
       <div className={styles.leftPanel}>
         <h5>WELCOME TO</h5>
-        <img src="/src/assets/image.png" alt="logo" width={300} />
+        <img src={image} alt="logo" width={300} />
         <p>
           We help you track your organisations <br></br> metrics as per the ESG
           Guidelines
@@ -20,7 +21,7 @@ const AuthPage: React.FC = () => {
       </div>
       <div className={styles.formContainer}>
         <div>
-          <img src="/src/assets/image2.png" alt="logo2" width={150} />
+          <img src={image2} alt="logo2" width={150} />
         </div>
         <div className={styles.form}>
           <Tabs defaultActiveKey="1">
