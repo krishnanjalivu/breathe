@@ -12,6 +12,7 @@ import {
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import styles from "../styles/Sidebar.module.scss";
+import image from "../assets/image.png";
 
 const { Sider } = Layout;
 
@@ -32,7 +33,7 @@ const Sidebar: React.FC<{ setActiveTab: (key: string) => void }> = ({
       className={styles.sidebar}
     >
       <div className={styles.logo}>
-        <img src="/src/assets/image.png" alt="Breathe ESG" width={150} />
+        <img src={image} alt="Breathe ESG" width={150} />
       </div>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
         <Menu.Item
