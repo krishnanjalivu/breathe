@@ -47,6 +47,7 @@ const Header: React.FC<HeaderProps> = ({ setActiveTab }) => {
       </div>
     </AntHeader>
   );
+  //error removed
 };
 
 export default Header;
