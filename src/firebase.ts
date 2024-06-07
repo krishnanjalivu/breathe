@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { GithubAuthProvider, GoogleAuthProvider, getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCWKeN5H7nT2it410wYwdWi1wtv2UMkpIQ",
+    apiKey: import.meta.env.API_KEY,
     authDomain: "tactile-wave-412007.firebaseapp.com",
     projectId: "tactile-wave-412007",
     storageBucket: "tactile-wave-412007.appspot.com",

@@ -1,4 +1,3 @@
-// src/components/SignInForm.tsx
 import React from "react";
 import { Button, Form, Input } from "antd";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
@@ -6,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../store/slices/authSlice";
 import { auth, googleProvider, githubProvider } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import styles from "../styles/AuthPage.module.scss";
 
 const SignInForm: React.FC = () => {
   const dispatch = useDispatch();
@@ -46,7 +46,12 @@ const SignInForm: React.FC = () => {
   };
 
   return (
-    <Form name="sign_in" layout="vertical" onFinish={onFinish}>
+    <Form
+      name="sign_in"
+      layout="vertical"
+      onFinish={onFinish}
+      className={styles.form}
+    >
       <Form.Item
         name="email"
         rules={[{ required: true, message: "Please input your email!" }]}
@@ -60,19 +65,19 @@ const SignInForm: React.FC = () => {
         <Input.Password placeholder="Password" />
       </Form.Item>
       <Form.Item>
-        <Button type="primary" htmlType="submit">
+        <Button htmlType="submit" className={styles.submitButton}>
           Sign In
         </Button>
       </Form.Item>
       <Form.Item>
         <Button
           onClick={handleGoogleSignIn}
-          type="primary"
           style={{ marginRight: 10 }}
+          className={styles.googleButton}
         >
           Sign In with Google
         </Button>
-        <Button onClick={handleGithubSignIn} type="primary">
+        <Button onClick={handleGithubSignIn} className={styles.githubButton}>
           Sign In with GitHub
         </Button>
       </Form.Item>

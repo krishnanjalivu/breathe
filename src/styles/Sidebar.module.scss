@@ -1,0 +1,35 @@
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #181818;
+  
+    .logo {
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px;
+  
+      img {
+        max-height: 100%;
+        color: white;
+      }
+    }
+  
+    .ant-menu {
+      flex: 1;
+    }
+  
+    .collapseButton {
+      width: 100%;
+      border: none;
+      background: #001529;
+      color: #fff;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

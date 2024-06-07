@@ -1,4 +1,3 @@
-// src/components/SignUpForm.tsx
 import React, { useState } from "react";
 import { Button, Form, Input } from "antd";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -6,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../store/slices/authSlice";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import styles from "../styles/AuthPage.module.scss";
 
 const SignUpForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -34,7 +34,7 @@ const SignUpForm: React.FC = () => {
       name="sign_up"
       onFinish={onFinish}
       layout="vertical"
-      // className={styles.signupForm}
+      className={styles.form}
     >
       <Form.Item
         name="email"
@@ -69,7 +69,11 @@ const SignUpForm: React.FC = () => {
         <Input.Password placeholder="Confirm Password" />
       </Form.Item>
       <Form.Item>
-        <Button type="primary" htmlType="submit" loading={loading}>
+        <Button
+          htmlType="submit"
+          loading={loading}
+          className={styles.submitButton}
+        >
           Sign Up
         </Button>
       </Form.Item>

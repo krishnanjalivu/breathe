@@ -1,0 +1,50 @@
+.dashboard {
+    height: 100vh;
+  
+    .ant-layout {
+      background: #f0f2f5;
+    }
+  
+    .content {
+      margin: 24px 16px;
+      padding: 24px;
+      background: #fff;
+      min-height: 280px;
+    }
+  }
+  
+  .sidebar {
+    .logo {
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px;
+  
+      img {
+        max-height: 100%;
+      }
+    }
+  
+    .collapseButton {
+      width: 100%;
+      border: none;
+      background: #001529;
+      color: #fff;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .dataEntry {
+    .ant-table {
+      background: #fff;
+    }
+  
+    .ant-tag {
+      margin: 0;
+    }
+  }
+  

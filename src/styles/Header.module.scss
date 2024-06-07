@@ -1,0 +1,27 @@
+.header {
+    background: #fff;
+    padding: 0px;
+    
+  
+    .headerContent {
+        background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 24px;
+      
+    }
+  
+    .left, .right {
+      display: flex;
+      align-items: center;
+    }
+  
+    .left > * {
+      margin-right: 16px;
+    }
+  
+    .right > * {
+      margin-left: 16px;
+    }
+  }
+  
