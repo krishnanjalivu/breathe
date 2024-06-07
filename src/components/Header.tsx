@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Dropdown, Menu, Button } from "antd";
+import { Layout, Menu, Button } from "antd";
 import { ArrowDownOutlined, UserOutlined } from "@ant-design/icons";
 import styles from "../styles/Header.module.scss";
 
@@ -13,12 +13,6 @@ const Header: React.FC<HeaderProps> = ({ setActiveTab }) => {
   const handleMenuClick = (tab: string) => {
     setActiveTab(tab);
   };
-  const menu = (
-    <Menu>
-      <Menu.Item key="1">Profile</Menu.Item>
-      <Menu.Item key="2">Logout</Menu.Item>
-    </Menu>
-  );
 
   return (
     <AntHeader className={styles.header}>
